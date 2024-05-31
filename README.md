@@ -8,4 +8,4 @@ Create a new .NET Maui app project in Visual Studio 2022 and replace the autogen
 
 ## Use
 
-Requires my [T41_SDR](https://github.com/tmr4/T41_SDR) software which must be compiled with a `Dual` or `Triple` USB Type. Select the appropriate COM port (not the one you normally use to program the T41).  That's it, the T41 clock should be set.   It's clunky, but get's the job done.  And I didn't have to break out my soldering iron.
+Requires my [T41_SDR](https://github.com/tmr4/T41_SDR) software which must be compiled with a `Dual` or `Triple` USB Type. Select the appropriate COM port (not the one you normally use to program the T41).  That's it, the T41 clock should be set.   It's clunky, but gets the job done.  And I didn't have to break out my soldering iron.
