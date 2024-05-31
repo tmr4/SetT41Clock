@@ -15,6 +15,7 @@ public partial class MainPage : ContentPage
   public MainPage()
   {
     InitializeComponent();
+
     Ports = SerialPort.GetPortNames();
     serialPortPicker.ItemsSource = Ports;
   }
@@ -89,10 +90,12 @@ public partial class MainPage : ContentPage
     var picker = (Picker)sender;
     int selectedIndex = picker.SelectedIndex;
 
-    if (selectedIndex != -1)
-    {
-      if(Connect((string)picker.ItemsSource[selectedIndex])) {
-        SetTime();
+    if(selectedIndex != -1) {
+      var port = picker.ItemsSource[selectedIndex];
+      if(port != null) {
+        if(Connect((string)port)) {
+          SetTime();
+        }
       }
     }
   }
